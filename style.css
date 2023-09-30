@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Young Serif', serif;
+  box-sizing: border-box;
+
+  
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(171, 171, 115);
+}
+.profile-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: rgb(189, 199, 199);
+  box-shadow: 3px 5px ;
+border-radius: 24px;
+padding:25px ;
+position: relative;
+
+}
+.profile-card::before{
+  content: "";
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  background-color: rgb(152, 99, 99);
+  top: 0;
+  left: 0;
+  border-radius: 25px  25px 0 0;
+}
+
+.image{
+  height: 150px;
+  width: 150px;
+  position: relative;
+  border-radius: 50%;
+  background-color: rgb(235, 221, 17);
+  padding: 3px;
+  border: 3px solid black;
+  
+  margin-bottom: 10px;
+}
+.image .profile-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+ 
+
+}
+.profile-card .text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text .name{
+  font-size: 22px;
+  font-weight: 500;
+}.text .work{
+  font-size: 15px;
+  font-weight: 400;
+}
+.profile-card .icons{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+
+}
+.icons .link{
+  color: aliceblue;
+  align-items: center;
+  text-decoration: none;
+  background-color: blue;
+  margin: 0 8px;
+  height: 34px;
+  width: 34px;
+  border-radius:50% ;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+
+}
+
+.profile-card .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+
+}
+.buttons .button{
+  padding: 0 10px;
+  background-color: rgb(20, 112, 233);
+  border: none;
+  color: rgb(245, 243, 241);
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons .button:hover{
+  background-color:  rgb(68, 181, 233);
+  color: black;
+  padding: 10px;
+}
+.profile-card .analys{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.analys .data{
+  display: flex;
+  align-items: center;
+  color: rgb(21, 20, 19);
+  border-right: 2px solid black;
+  padding: 0 20px;
+}
+.data i{
+  font-size: 18px;
+}
+.data:last-child{
+  border-right: none;
+}
